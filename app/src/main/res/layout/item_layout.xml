@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/grid_visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/grid_item_thumbnail"
+            android:layout_width="@dimen/grid_item_thumbnail_width"
+            android:layout_height="@dimen/grid_item_thumbnail_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/grid_item_brand_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:ellipsize="end"
+            android:ems="15"
+            android:gravity="left"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:paddingBottom="1dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_below="@+id/grid_item_thumbnail"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/grid_item_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="15"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:layout_below="@+id/grid_item_brand_name"
+            />
+
+
+        <TextView
+            android:id="@+id/grid_item_updated_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E38D14"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:lines="1"
+            android:text=""
+            android:textSize="13sp"
+           android:layout_alignParentRight="true"
+            android:layout_below="@+id/grid_item_thumbnail"/>
+        <TextView
+            android:id="@+id/grid_item_original_price"
+            android:layout_below="@+id/grid_item_updated_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:padding="1dp"/>
+        <TextView
+            android:id="@+id/grid_item_percent_off"
+            android:layout_below="@+id/grid_item_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AD3B4A"
+            android:text="25% OFF!"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            android:padding="1dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

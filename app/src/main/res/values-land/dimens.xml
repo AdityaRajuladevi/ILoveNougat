@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="alert_text_Size">20sp</dimen>
+    <dimen name="grid_item_thumbnail_width">115dp</dimen>
+    <dimen name="grid_item_thumbnail_height">130dp</dimen>
+</resources>

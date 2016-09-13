@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ILoveNougat</string>
+    <string name="title_activity_main">ILoveNougat</string>
+    <string name="search_instruction">Search for items from the App Bar!</string>
+    <string name="no_items_message">Sorry!! There are no results that match your search</string>
+    <string name="comparision_no_results_message">Product Not Available at 6pm!!</string>
+    <string name="comparision_message"> available in 6pm at lesser Price</string>
+</resources>
